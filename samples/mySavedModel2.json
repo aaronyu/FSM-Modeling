@@ -1,0 +1,25 @@
+{ "nodeKeyProperty": "id",
+            "nodeDataArray": [
+                { "id": 0, "loc": "550 175", "text": "Start" },
+                { "id": 1, "loc": "580 320", "text": "Diagnostic" },
+                { "id": 2, "loc": "356 450", "text": "Command" },
+                { "id": 3, "loc": "210 200", "text": "Tilt" },
+                { "id": 4, "loc": "10 450", "text": "Stow" },
+                { "id": 5, "loc": "350 240", "text": "Fault" },
+                { "id": 6, "loc": "0 270", "text": "Track" }
+            ],
+            "linkDataArray": [
+                { "from": 0, "to": 1, "text": "go", "curviness": 20 },
+                { "from": 1, "to": 6, "text": "successful" },
+                { "from": 2, "to": 1, "text": "test" },
+                { "from": 1, "to": 5, "text": "testFail" },
+                { "from": 2, "to": 4, "text": "Un/stow(reg/snow/wind/flood/clean)","curviness":40 },
+                { "from": 2, "to": 3, "text": "track (empty cmd\nqueue)" },
+                { "from": 6, "to": 4, "text": "goodnite", "curviness": 30 },
+                { "from": 4, "to": 6, "text": "good morning", "curviness": 30 },
+                { "from": 3, "to": 5, "text": "trip" },
+                { "from": 2, "to": 5, "text": "clear" },
+                { "from": 6, "to": 3, "text": "angle" },
+                { "from": 3, "to": 6, "text": "reach" }
+            ]
+}
